@@ -1,0 +1,714 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
+
+/*General and Phone*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    font-family: 'Notable';
+}
+
+#logo{
+    display: none;
+    width: 10%;
+    height: auto;
+}
+
+body#home{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tickets-article{
+    display: none;
+}
+
+section#bestdestinations-articles {
+    display: grid;
+}
+
+.header:not(body#home){
+    width:60%;
+    float: left;
+}
+
+body#home section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+body#home section>article h2{
+    width: 20%;
+}
+
+body#home section>article{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 150%;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    border-style: groove;
+    border-color: #0058B3;
+    padding: 5px 10px 10px;
+    margin: 5px 5px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+body#home section>article>header{
+    order: 1;
+}
+
+body#home section>article>p{
+    order: 2;
+}
+
+body#home section>article>figure{
+    order: 3;
+    align-self: center;
+}
+
+body#home section>article img{
+    width: 100%;
+    max-height: 15vh;   
+}
+
+body#home figure{
+    box-sizing: border-box;
+    max-width: 30%;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    border-style: ridge;
+}
+
+body#home figcaption{
+    display: none;
+}
+
+#contact-article>h2{
+    clear: both;
+}
+
+video{
+    display: none;
+}
+
+#article-home-1{
+    order: 3;
+}
+
+#article-home-2{
+    order: 2;
+}
+
+#article-home-3{
+    order: 1;
+}
+
+body#home nav{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+body#home #hamburger-open{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    justify-content: flex-end;
+}
+
+body:not(#home) #hamburger-open{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+body#home .header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 60%;
+}
+
+body#home .header>*{
+    flex-basis: 100%;
+}
+
+#navbar{
+    display: none;
+}
+
+#hamburger-open:focus + #navbar{
+    display: block;
+}
+
+body:not(#home) #hamburger-open:focus + #navbar{
+    display: block;
+    float: right;
+    padding-top: 20px;
+    width: 30%;
+}
+
+#navbar:hover{
+    display: block;
+}
+
+ul#navbar li{
+    background-color: rgb(189, 186, 186);
+    margin-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-style: solid;
+}
+
+ul#navbar a{
+    text-decoration: none;
+    color: #000;
+}
+
+table#tickets-table{
+    border: 1px;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+table#tickets-table th,tr{
+    border-style: solid;
+}
+
+table#tickets-table tr:nth-child(2n){
+    background-color: #CFF;
+}
+
+table#tickets-table tr:nth-child(2n+1){
+    background-color: #FFF;
+}
+
+table#tickets-table th:first-child{
+    background-color: #FF0;
+}
+
+table#tickets-table tr:first-child{
+    text-transform: uppercase;
+}
+
+table#tickets-table tr:not(:nth-child(0)) + tr:hover{
+    border-width: thick;
+    border-style: double;
+    background-color: #287FCB;
+}
+
+#table-footer{
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+section#section-table h2{
+    clear: both;
+}
+
+#contact-aside{
+    margin-top: 10px;
+}
+
+aside{
+    border-style: double;
+    padding: 0px 15px 0px 15px;
+    margin: 15px 15px 15px 15px;
+    background-color: #D3D3D3;
+}
+
+aside>h2{
+    text-align: center;
+}
+
+.aside{
+    width: 90%;
+}
+
+.aside ol li{
+    list-style-type: none;
+}
+
+.aside figure{
+    border-style: ridge;
+}
+
+.aside figure>figcaption{
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+}
+
+.aside img{
+    width: 100%;
+    max-height: 20vh;
+}
+
+fieldset{
+    width: 15%;
+    margin-left: 20%;
+}
+
+form>input, form>textarea{
+    display: block;
+    margin-bottom: 2em;
+    width: 220px;
+}
+
+form>textarea{
+    height: 100px;
+}
+
+body#bestdestinations #header{
+    grid-area: header;
+}
+
+body#bestdestinations nav{
+    grid-area: navigation;
+}
+
+#article-bestdestinations-1{
+    grid-area: article-1;
+}
+
+#article-bestdestinations-2{
+    grid-area: article-2;
+}
+
+#article-bestdestinations-3{
+    grid-area: article-3;
+}
+
+#article-bestdestinations-4{
+    grid-area: article-4;
+}
+
+#article-bestdestinations-5{
+    grid-area: article-5;
+}
+
+#article-bestdestinations-6{
+    grid-area: article-6;
+}
+
+#bestdestinations-aside{
+    width: 90%;
+}
+
+section#bestdestinations-articles p{
+    text-indent:2em;
+}
+
+section#bestdestinations-articles h2:first-child{
+    grid-area: header;
+}
+
+/*Smartphone - =<480px */
+/*Tablet - >480xp && <1280px */
+/*Desktop - >=1280px */
+
+/*Phone only*/
+@media screen and (max-width: 480px)
+{
+    #article-bestdestinations-4{
+        display: none;
+    }
+    
+    #article-bestdestinations-6{
+        display: none;
+    }
+
+    section#bestdestinations-articles{
+        clear: both;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas: 
+            'header header'
+            'article-5 article-5'
+            'article-5 article-5'
+            'article-5 article-5'
+            'article-3 article-3'
+            'article-3 article-3'
+            'article-3 article-3'
+            'article-2 article-2'
+            'article-2 article-2'
+            'article-2 article-2'
+            'article-1 article-1'
+            'article-1 article-1'
+            'article-1 article-1'
+        ;
+    }
+
+    body:not(#home) #navbar:hover{
+        display: block;
+        float: right;
+        padding-top: 20px;
+        width: 30%;
+    }
+}
+
+/*Tablet and Desktop only*/
+@media screen and (min-width: 480px)
+{
+    #logo{
+        display: inherit;
+        width: 7em;
+        height: auto;
+    }
+
+    body#home section>article{
+        flex-direction: row;
+    }
+    
+    body#home section>article>header{
+        order: 1;
+        flex-basis: 100%;
+    }
+    
+    body#home section>article>p{
+        order: 3;
+        flex-basis: 50%;
+        flex-wrap: wrap;
+    }
+    
+    body#home section>article>figure{
+        order: 2;
+        align-self: flex-start;
+        flex-basis: 30%;
+    }
+
+    #tickets-article{
+        display: block;
+    }
+
+    #tickets-article p{
+        width: 60%;
+    }
+
+    #navbar{
+        display: block;
+        width: 100%;
+        clear: both;
+    }
+
+    #hamburger-open{
+        display: none;
+    }
+
+    ul#navbar li{
+        display: inline;
+        margin-right: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    body#home #navbar{
+        display: flex;
+        flex-basis: 100%;
+    }
+
+    body#home .header{
+        display: flex;
+        flex-basis: 100%;
+    }
+
+    body#home nav{
+        flex-basis: 100%;
+    }
+
+    .header:not(body#home){
+        width: 100%;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .aside figure{
+        border-style: ridge;
+        max-width: 25vw;
+    }
+    
+    .aside{
+        display: block;
+        width: 60%;
+    }
+    
+    aside#contact-aside{
+        border-style: double;
+        width: 20%;
+        margin-top: -25%;
+        padding-left: 15px;
+        margin-left: 15px;
+        float: right;
+        font-style: italic;
+        background-color: lightgray;
+    }
+    
+    
+
+}
+
+/*Tablet Only*/
+@media screen and (min-width: 480px) and (max-width:1280px)
+{
+    #bestdestinations-aside figure{
+        display: inline-block;
+        margin:2px;
+    }
+
+    #article-bestdestinations-4{
+        display: none;
+    }
+
+    section#bestdestinations-articles{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas: 
+            'header header'
+            'article-1 article-2'
+            'article-1 article-2'
+            'article-3 article-2'
+            'article-3 article-5'
+            'article-3 article-5'
+            'article-3 article-5'
+            'article-6 article-6'
+            'article-6 article-6'
+        ;
+    }
+
+    #video-tablet{
+        display: flex;
+        flex-basis: 50%;
+        align-content: center;
+        align-self: flex-end;
+    }
+
+    #contact-aside figcaption{
+        display: none;
+    }
+
+    #contact-aside img{
+        max-width: 100%;
+        max-height: 20vh;
+    }
+
+    #tickets-aside .aside{
+        width: 80%;
+        margin: auto;
+    }
+
+    #tickets-aside ol{
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    #tickets-aside a:first-child{
+        display: none;
+    }
+
+    aside#tickets-aside figcaption{
+        display: none;
+    }
+
+    aside#tickets-aside a:not(:first-child){
+        display: inline-block;
+        width: 40%;
+    }
+
+}
+
+/*Desktop Only*/
+@media screen and (min-width:1280px)
+{
+    #bestdestinations-aside figure{
+        display: inline-block;
+        margin:15px;
+    }
+
+    section#bestdestinations-articles{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas: 
+            'header header header'
+            'article-2 article-1 article-3'
+            'article-2 article-1 article-3'
+            'article-5 article-1 article-3'
+            'article-5 article-1 article-4'
+            'article-5 article-1 article-4'
+            'article-5 article-1 article-4'
+            'article-5 article-6 article-6'
+        ;
+    }
+
+    body#contact textarea{
+        resize: vertical;
+    }
+
+    #video-pc{
+        display: flex;
+        flex-basis: 50%;
+        align-content: center;
+        align-self: flex-end;
+    }
+
+    body#home section{
+        width: 70%;
+    }
+
+    body#home section>article>header{
+        order: 1;
+        flex-basis: 100%;
+    }
+    
+    body#home section>article>p{
+        order: 2;
+        flex-basis: 60%;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+    
+    body#home section>article>figure{
+        order: 3;
+        margin:auto;
+    }
+
+    #article-home-1{
+        order: 1;
+    }
+
+    #article-home-2{
+        order: 2;
+    }
+
+    #article-home-3{
+        order: 3;
+    }
+
+    body#home figcaption{
+        display: block;
+        clear: both;
+        text-align: center;
+        background-color: #000;
+        color: #FFF;
+    }
+
+    #tickets-aside{
+        display: block;
+        border-style: double;
+        width: 20%;
+        margin-top: auto;
+        padding-left: 15px;
+        margin-left: 15px;
+        font-style: italic;
+        background-color: #D3D3D3;
+        position: absolute;
+        right: 0%;
+        top: 45%;
+    }
+
+    #tickets-aside img{
+        width: 100%;
+        max-height: 12vh;
+    }
+
+    #navbar li:hover{
+        background-color: #287FCB;
+    }
+
+    table#tickets-table{
+        width: 70%;
+    }
+
+    #home aside{
+        border-style: double;
+        display: block;
+        width: 20%;
+        padding-left: 15px;
+        margin-left: 15px;
+        float: right;
+        font-style: italic;
+        background-color: #D3D3D3;
+        position: absolute;
+        right: 0%;
+        top: 100%;
+    }
+
+    body#home section article{
+        padding-bottom: 100px;
+    }
+
+    body#home section figure{
+        float: right;
+        clear: both;
+    }
+
+}
+
+.header{
+    width: 100%;
+    background-color: #ffebcd;
+}
+
+ul#navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+    margin-left: 10px;
+}
+
+a:link{
+    color: #D202F0;
+}
+
+a:visited{
+    color: #02B0F0;
+}
+
+a:hover{
+    color: #F00202;
+}
+
+body#home aside ul{
+    margin-bottom: 15px;
+    padding-left: 15px;
+    margin-left: 15px;
+}
+
+footer{
+    margin-top: 20px;
+    width: 100%;
+    background-color: #C6C8CA;
+}
+
+footer:not(body#home){
+    padding: 10px 0px 10px 0px;
+    clear: both;
+}
+
+#cookie-statement{
+    display: block;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+    float: right;
+    width: 25%;
+    color: #FFF;
+    background-color:#FA0;
+    opacity: 50%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+}
