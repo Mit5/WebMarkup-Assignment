@@ -1,0 +1,4 @@
+Student name: Dimitar Kazakov
+Student number: 678874
+Student class: IT1A
+URL student GitHub repository: https://github.com/Mit5/WebMarkup-Assingment
